@@ -22,15 +22,16 @@ Aplicación SPA para gestionar incidencias de software. Permite iniciar sesión 
 npm install
 ```
 
-2. Ejecuta el servidor mock API:
+2. Inicia el servidor mock API y la app de Vite al mismo tiempo:
+
+```bash
+npm run start
+```
+
+3. Si prefieres ejecutar el API y la app por separado:
 
 ```bash
 npm run api
-```
-
-3. En otra terminal, ejecuta la aplicación:
-
-```bash
 npm run dev
 ```
 
@@ -41,6 +42,12 @@ npm run dev
 - Ingresa un nombre y selecciona un rol en la pantalla de login.
 - Desde el panel principal puedes crear, editar y eliminar incidencias.
 - El botón de cerrar sesión limpia el LocalStorage y regresa al login.
+
+## Flujo de Git
+
+- Rama principal estable: `main`
+- Rama de integración: `develop`
+- Ramas de característica: `feature/*`
 
 ## Despliegue
 

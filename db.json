@@ -4,15 +4,15 @@
       "id": 1,
       "title": "El formulario de login no muestra mensajes",
       "description": "Al iniciar sesión no hay validación visual cuando el nombre está vacío.",
-      "status": "Pending",
-      "priority": "High"
+      "status": "Pendiente",
+      "priority": "Alta"
     },
     {
       "id": 2,
       "title": "Falta botón de cerrar sesión",
       "description": "Verificar que el botón cierre sesión y limpie el LocalStorage correctamente.",
-      "status": "In Progress",
-      "priority": "Medium"
+      "status": "En Progreso",
+      "priority": "Media"
     }
   ]
 }

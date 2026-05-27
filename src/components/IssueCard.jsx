@@ -1,14 +1,14 @@
 function IssueCard({ issue, onEdit, onDelete }) {
   const badgeMap = {
-    Pending: 'bg-yellow-100 text-yellow-700',
-    'In Progress': 'bg-sky-100 text-sky-700',
-    Resolved: 'bg-emerald-100 text-emerald-700',
+    Pendiente: 'bg-yellow-100 text-yellow-700',
+    'En Progreso': 'bg-sky-100 text-sky-700',
+    Resuelto: 'bg-emerald-100 text-emerald-700',
   };
 
   const priorityMap = {
-    Low: 'bg-slate-100 text-slate-700',
-    Medium: 'bg-amber-100 text-amber-700',
-    High: 'bg-rose-100 text-rose-700',
+    Baja: 'bg-slate-100 text-slate-700',
+    Media: 'bg-amber-100 text-amber-700',
+    Alta: 'bg-rose-100 text-rose-700',
   };
 
   return (

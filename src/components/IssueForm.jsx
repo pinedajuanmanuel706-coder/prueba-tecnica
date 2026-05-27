@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-const STATUS_OPTIONS = ['Pending', 'In Progress', 'Resolved'];
-const PRIORITY_OPTIONS = ['Low', 'Medium', 'High'];
+const STATUS_OPTIONS = ['Pendiente', 'En Progreso', 'Resuelto'];
+const PRIORITY_OPTIONS = ['Baja', 'Media', 'Alta'];
 
 function IssueForm({ issue, onSave, onCancel, loading }) {
   const [title, setTitle] = useState(issue?.title || '');
