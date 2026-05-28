@@ -1,25 +1,12 @@
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000';
 const api = axios.create({
-  baseURL: API_BASE,
-  headers: {
-    'Content-Type': 'application/json',
-  },
+  baseURL: 'http://localhost:3001', // asegúrate de levantar json-server en este puerto
+  headers: { 'Content-Type': 'application/json' },
+  timeout: 5000,
 });
 
-export function fetchIssues() {
-  return api.get('/issues');
-}
-
-export function createIssue(issue) {
-  return api.post('/issues', issue);
-}
-
-export function updateIssue(issueId, payload) {
-  return api.patch(`/issues/${issueId}`, payload);
-}
-
-export function deleteIssue(issueId) {
-  return api.delete(`/issues/${issueId}`);
-}
+export const fetchIssues = () => api.get('/issues');
+export const createIssue = (issue) => api.post('/issues', issue);
+export const updateIssue = (id, changes) => api.patch(`/issues/${id}`, changes);
+export const deleteIssue = (id) => api.delete(`/issues/${id}`);

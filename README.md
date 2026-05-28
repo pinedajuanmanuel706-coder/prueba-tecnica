@@ -35,7 +35,7 @@ npm run api
 npm run dev
 ```
 
-4. Abre el navegador en la dirección que indique Vite (normalmente `http://localhost:5173`).
+4. Abrir el navegador en la dirección que indique Vite (normalmente `http://localhost:5173`).
 
 ## Uso
 
